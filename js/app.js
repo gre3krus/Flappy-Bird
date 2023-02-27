@@ -219,18 +219,12 @@ function logic(){
   drawBird();
 };
 
-function checkKeyDown(e){
-    let keyId = e.keyCode;
-  if (keyId == "32"){
+function checkKeyDown(){
       playerobj.isUp = true;
       jumpb()
-    }
 };
-function checkKeyUp(e){
-let keyId = e.keyCode;
-  if (keyId == "32"){
-      playerobj.isUp = false;  
-    }
+function checkKeyUp(){
+  playerobj.isUp = false;  
 };
 
 function drawColumn(){
